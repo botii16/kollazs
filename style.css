@@ -1,0 +1,23 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+body{
+    background-color: rgb(83, 83, 83);
+}
+h1, h2, h3 ,h4, h5, h6{
+    text-align: center;
+}
+a.keplink{
+    font-size: xx-large;
+}
+button{
+    border: 3px;
+    background-color: black;
+    border-color: white;
+    border-radius: 5px;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+}
