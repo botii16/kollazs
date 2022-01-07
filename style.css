@@ -1,84 +1,69 @@
-*{
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 body{
-    background-color: rgb(83, 83, 83);
-}
-h1, h2, h3 ,h4, h5, h6{
-    text-align: center;
-}
-a.keplink{
-    font-size: xx-large;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(150, 150, 150)
 }
 button{
-    border: 3px;
-    background-color: black;
-    border-color: white;
-    border-radius: 5px;
-    font-size: large;
+    border-radius: 25px;
+    background-color: darkgray;
 }
 a{
-    text-decoration: none;
+  color: orange;
+  text-decoration: none;
 }
-
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(112, 112, 112);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+  display: block;
+  color: orange;
+  padding: 16px;
+  text-decoration: none;
 }
 
 .sidebar a.active {
-    background-color: black;
-    color: white;
+  background-color: rgb(150, 150, 150);
+  color: white;
 }
 
 .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+  background-color: #555;
+  color: yellow;
 }
 
 div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
 
 @media screen and (max-width: 700px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .sidebar a {
-        float: left;
-    }
-    div.content {
-        margin-left: 0;
-    }
-    .sor {
-        display: none;
-    }
-    .oszlop {
-        display: table;
-    }
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .sidebar a {
+      float: left;
+  }
+
+  div.content {
+      margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
+  .sidebar a {
+      text-align: center;
+      float: none;
+  }
 }
-
