@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>SP oldala</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="Listák.html">Listák</a>
+        <a href="orarend.html">Órarend</a>
+        <a href="evszakok.html">Évszakok</a>
+        <a class="active" href="urlap.html">ŰRLAP</a>
+    </div>
+
+    <div class="content">
+
+        <form name="rendeles">
+            <h1>Pizza Rendelés</h1>
+            <fieldset>
+                <legend>Vevő adatai:</legend>
+                <p><label>Teljes Név: <input type="text" name="nev">
+                        </label></p>
+                <p><label>Telefonszám: <input type="tel" name="telefon" size="10"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Pizza mérete</legend>
+                <p><label><input type="radio" name="meret" value="kicsi">20cm</label></p>
+                <p><label><input type="radio" name="meret" value="nagy">50cm</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Feltétek</legend>
+                <p><label><input type="checkbox" name="feltet1" value="sonka">Sonkás</label></p>
+                <p><label><input type="checkbox" name="feltet2" value="sajt">Sajtos</label></p>
+                <p><label><input type="checkbox" name="feltet3" value="gomba">Gombás</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Végezetül</legend>
+                <p><label>Mennyiség: <input type="number" name="mennyiseg"> db</label></p>
+                <p><label>Egyéb megjegyzés: <textarea name="egyeb"></textarea></label></p>
+                <p><label>Kért szállítási idő: <input type="time" name="kiszallitas"></label></p>
+                <br>
+                <input type="reset" name="visszaallitas">
+                <input type="submit" name="kuldes">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
