@@ -17,7 +17,10 @@ body {
    color: white;
    text-align: center;
 }
-
+.footer a{
+    text-decoration: none;
+    color: white;
+}
 .sidebar {
     font-family: 'Press Start 2P', cursive;
     margin: 0;
