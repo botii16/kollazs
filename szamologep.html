@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boti oldala</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>Számológép</legend>
+        <form action="javascript:void(0);">
+            <input type="number" id="A" placeholder="A érték" required><br>
+            <input type="number" id="B" placeholder="B érték" required><br>
+            <input type="button" value="Összeadás" onclick="osszead()"> <input type="text" id="ossze" readonly>
+            <br>
+            <input type="button" value="Kivonás" onclick="kivon()"> <input type="text" id="kiv" readonly> <br>
+            <input type="button" value="Szorzás" onclick="szoroz()"> <input type="text" id="szor" readonly> <br>
+            <input type="button" value="Osztás" onclick="oszt()"> <input type="text" id="osztas" readonly> <br>
+        </form>
+    </fieldset>
+    <script>
+        function osszead() {
+            ossze.value = (Number(A.value) + Number(B.value))
+        }
+
+        function kivon() {
+            kiv.value = (Number(A.value) - Number(B.value))
+        }
+
+        function szoroz() {
+            szor.value = (Number(A.value) * Number(B.value))
+        }
+
+        function oszt() {
+            osztas.value = (Number(A.value) / Number(B.value))
+        }
+    </script>
+
+</body>
+</html>
